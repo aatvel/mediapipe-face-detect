@@ -41,10 +41,12 @@ export default function Scene() {
       <Canvas style={{ position: "absolute" }}>
         <OrbitControls makeDefault />
         <Environment preset="forest" blur={0.8} />
+
         <mesh ref={meshRef}>
-          <boxGeometry args={[1, 1, 1]} />
+          <boxGeometry args={[1, 1, 1]} position={[2, 0, 0]} />
           <meshBasicMaterial color={"aqua"} />
         </mesh>
+
       </Canvas>
     </>
   );
